@@ -29,11 +29,6 @@ import java.util.Optional;
             return ResponseEntity.ok(postagemRepository.findAll());
         }
 
-        @GetMapping("/tema/{tema}")
-        public ResponseEntity<List<Postagem>> getByTema(@PathVariable String tema){
-            return ResponseEntity.ok(postagemRepository.findAllByTemaContainingIgnoreCase(tema));
-        }
-
         @PostMapping
         public ResponseEntity<Postagem> post(@Valid @RequestBody Postagem postagem){
             if (temaRepository.existsById(postagem.getTema().getId()))

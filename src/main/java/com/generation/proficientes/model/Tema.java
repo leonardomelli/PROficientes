@@ -16,10 +16,6 @@ public class Tema {
     private Long id;
 
     @NotBlank
-    @Size(min = 5, max = 50, message = "O título deve conter no mínimo 05 e no máximo 50 caracteres!")
-    private String titulo;
-
-    @NotBlank
     @Size(min = 5, max = 1000, message = "A descrição deve conter no mínimo 05 e no máximo 1000 caracteres!")
     private String descricao;
 
@@ -41,14 +37,6 @@ public class Tema {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
     }
 
     public String getDescricao() {
