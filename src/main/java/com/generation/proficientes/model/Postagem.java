@@ -29,9 +29,6 @@ public class Postagem {
     @Size(min = 1, max = 1000)
     private String comentario;
 
-    @NotBlank
-    private Integer curtir;
-
     public Tema getTema() {
         return tema;
     }
@@ -67,14 +64,6 @@ public class Postagem {
 
     public void setComentario(String comentario) {
         this.comentario = comentario;
-    }
-
-    public Integer getCurtir() {
-        return curtir;
-    }
-
-    public void setCurtir(Integer curtir) {
-        this.curtir = curtir;
     }
 
     public String getTitulo() {
