@@ -18,15 +18,16 @@ public class Postagem {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotBlank
+    @Size(min = 5, max = 50, message = "O título deve conter no mínimo 05 e no máximo 50 caracteres!")
+    private String titulo;
+
     @UpdateTimestamp
     private LocalDateTime data;
 
     @NotBlank
     @Size(min = 1, max = 1000)
     private String comentario;
-
-    @NotBlank
-    private Integer curtir;
 
     public Tema getTema() {
         return tema;
@@ -65,11 +66,11 @@ public class Postagem {
         this.comentario = comentario;
     }
 
-    public Integer getCurtir() {
-        return curtir;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setCurtir(Integer curtir) {
-        this.curtir = curtir;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 }
