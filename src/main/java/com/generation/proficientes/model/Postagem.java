@@ -3,6 +3,7 @@ package com.generation.proficientes.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -28,6 +29,18 @@ public class Postagem {
     @NotBlank
     @Size(min = 1, max = 1000)
     private String comentario;
+
+
+    @Min(value = 0)
+    private int countLike;
+
+    public int getCountLike() {
+        return countLike;
+    }
+
+    public void setCountLike(int countLike) {
+        this.countLike = countLike;
+    }
 
     public Tema getTema() {
         return tema;
