@@ -1,4 +1,4 @@
-package com.generation.proficientes.Security;
+package com.generation.proficientes.security;
 
 import java.util.Optional;
 
@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
 import com.generation.proficientes.model.Usuario;
-import com.generation.proficientes.Repository.UsuarioRepository;
+import com.generation.proficientes.repository.UsuarioRepository;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {

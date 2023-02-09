@@ -23,7 +23,7 @@ public class Usuario {
 
     @NotNull(message = "O Atributo Usuário é Obrigatório!")
     @Email(message = "O Atributo Usuário deve ser um email válido!")
-    private String email;
+    private String usuario;
 
     @NotNull(message = "O Atributo Senha é Obrigatório!")
     @Size(min = 5, message = "A Senha deve ter no mínimo 5 caracteres!")
@@ -76,12 +76,12 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getSenha() {

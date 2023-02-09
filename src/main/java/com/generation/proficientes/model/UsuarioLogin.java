@@ -1,4 +1,4 @@
-package com.generation.blogpessoal.model;
+package com.generation.proficientes.model;
 
 public class UsuarioLogin {
 

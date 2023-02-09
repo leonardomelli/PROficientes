@@ -1,4 +1,4 @@
-package com.generation.proficientes.Repository;
+package com.generation.proficientes.repository;
 
 import com.generation.proficientes.model.Postagem;
 //import org.hibernate.mapping.List;

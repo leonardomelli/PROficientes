@@ -1,5 +1,4 @@
-package com.generation.proficientes.Repository;
-import com.generation.proficientes.Controller.TemaController;
+package com.generation.proficientes.repository;
 import com.generation.proficientes.model.Tema;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.query.Param;

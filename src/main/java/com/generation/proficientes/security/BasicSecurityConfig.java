@@ -1,4 +1,4 @@
-package com.generation.proficientes.Security;
+package com.generation.proficientes.security;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

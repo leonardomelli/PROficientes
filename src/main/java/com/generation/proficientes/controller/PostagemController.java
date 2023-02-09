@@ -1,9 +1,8 @@
-package com.generation.proficientes.Controller;
+package com.generation.proficientes.controller;
 
-import com.generation.proficientes.Repository.PostagemRepository;
-import com.generation.proficientes.Repository.TemaRepository;
+import com.generation.proficientes.repository.PostagemRepository;
+import com.generation.proficientes.repository.TemaRepository;
 import com.generation.proficientes.model.Postagem;
-import com.generation.proficientes.model.Tema;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

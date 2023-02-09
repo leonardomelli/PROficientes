@@ -1,4 +1,4 @@
-package com.generation.proficientes.Security;
+package com.generation.proficientes.security;
 
 import java.util.Collection;
 import java.util.List;

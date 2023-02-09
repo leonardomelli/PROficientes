@@ -1,5 +1,5 @@
-package com.generation.proficientes.Controller;
-import com.generation.proficientes.Repository.TemaRepository;
+package com.generation.proficientes.controller;
+import com.generation.proficientes.repository.TemaRepository;
 import com.generation.proficientes.model.Tema;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
