@@ -66,8 +66,4 @@ public class UserDetailsImpl implements UserDetails{
         return true;
     }
 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/main

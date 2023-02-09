@@ -28,9 +28,9 @@ import java.util.Optional;
             return ResponseEntity.ok(postagemRepository.findAll());
         }
 
-        @GetMapping("/tema/{tema}")
-        public ResponseEntity<List<Postagem>> getByTema(@PathVariable String tema){
-            return ResponseEntity.ok(postagemRepository.findAllByTemaContainingIgnoreCase(tema));
+        @GetMapping("/titulo/{titulo}")
+        public ResponseEntity<List<Postagem>> getByTitulo(@PathVariable String titulo) {
+            return ResponseEntity.ok(postagemRepository.findAllByTituloContainingIgnoreCase(titulo));
         }
 
         @PostMapping
@@ -53,7 +53,7 @@ import java.util.Optional;
         }
 
         @ResponseStatus(HttpStatus.NO_CONTENT)
-        @DeleteMapping("{/id}")
+        @DeleteMapping("/{id}")
         public void delete (@PathVariable Long id){
             Optional<Postagem> postagem = postagemRepository.findById(id);
             if (postagem.isEmpty())
