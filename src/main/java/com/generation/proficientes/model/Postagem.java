@@ -15,6 +15,8 @@ import java.time.LocalDateTime;
 @Table(name = "tb_postagem")
 public class Postagem {
 
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -29,6 +31,8 @@ public class Postagem {
     @NotBlank
     @Size(min = 1, max = 1000)
     private String comentario;
+
+
 
 
     @Min(value = 0)
@@ -49,6 +53,13 @@ public class Postagem {
     public void setTema(Tema tema) {
         this.tema = tema;
     }
+
+    @ManyToOne
+    @JsonIgnoreProperties("postagem")
+    private Usuario usuario;
+
+
+
 
     @ManyToOne
     @JsonIgnoreProperties("postagem")
@@ -86,4 +97,15 @@ public class Postagem {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
+
+
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+
 }
