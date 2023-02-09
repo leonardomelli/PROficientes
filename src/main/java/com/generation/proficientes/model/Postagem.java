@@ -32,9 +32,6 @@ public class Postagem {
     @Size(min = 1, max = 1000)
     private String comentario;
 
-
-
-
     @Min(value = 0)
     private int countLike;
 
