@@ -39,8 +39,7 @@ public class Usuario {
 
     private String cid;
 
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private Date dataNascimento ;
+    private String dataNascimento ;
 
     @Size(max = 5000, message = "O link da foto não pode ser maior do que 5000 caracteres")
     private String logo;
@@ -125,11 +124,11 @@ public class Usuario {
         this.cid = cid;
     }
 
-    public Date getDataNascimento() {
+    public String getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(String dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 
